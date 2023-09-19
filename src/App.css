@@ -1,38 +1,334 @@
-.App {
-  text-align: center;
+:root {
+  --themeDarkBlue: #12406f;
+  --themeLightGray: #f5f5f5;
+  --themeTextGray: #7e7e7e;
+  --themeDarkGray: #f6f6f6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+* {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #3498db #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f1f0f0;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+    border-radius: 10px;
+    border: 3px solid #dad7d7;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hide-scroll {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  width: 0.25rem;
+  /* Set to a non-zero value to hide the scrollbar, adjust as needed */
+}
+
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small screens (max-width: 640px) */
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .videos-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Medium screens (max-width: 768px) */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .videos-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Large screens (max-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .videos-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Extra-large screens (max-width: 1280px) */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .videos-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Extra-extra-large screens (max-width: 1536px) */
+@media screen and (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .videos-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 2px 0;
+  background-color: var(--themeDarkBlue);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .logo {
+  font-weight: 600;
+  font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+}
+
+.homeCarousel {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: var(--themeLightGray);
+}
+
+.homeCarousel .carousel-content {
+  max-width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 50px;
+}
+
+.theme-btn {
+  background-color: var(--themeDarkBlue);
+  color: white;
+  padding: 12px 24px;
+  font-size: smaller;
+  border-radius: 0.5rem;
+}
+
+.white-btn {
+  background-color: white;
+  color: var(--themeDarkBlue);
+  padding: 12px 24px;
+  font-size: smaller;
+  border-radius: 0.5rem;
+}
+
+.sm-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.md-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.lg-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.text-light-gray {
+  color: var(--themeTextGray);
+}
+
+.text-theme-blue {
+  color: var(--themeDarkBlue);
+}
+
+.calender-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border-right-width: 0px;
+  border-left-width: 2px;
+}
+
+.calender-container h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.calender-container .calender-items {
+  width: 80%;
+}
+
+.calender-container ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+
+}
+
+.calender-container ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 15px;
+}
+
+.calender-container ul li .lg-icon {
+  margin-top: 15px;
+}
+
+.calender-container ul li p {
+  color: var(--themeDarkBlue);
+  font-weight: 600;
+}
+
+.blog-container{
+  overflow-x: scroll;
+  margin: 30px 0;
+}
+.grid-container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.blog-card {
+  flex-shrink: 0;
+  cursor: pointer;
+  background-color: var(--themeDarkBlue);
+  color: #ffffff;
+  padding: 30px;
+  width: 24rem;
+  border-radius: 1rem;
+}
+.blog-card h3{
+  font-weight: 600;
+}
+.blog-card a {
+text-decoration: none;
+color: #ffffff;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.target-points-container{
+  display: flex;
+  background-color: var(--themeLightGray);
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  margin: 30px 0;
+  gap: 30px;
+}
+
+.target-points-container h5{
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: var(--themeDarkBlue);
+  font-size: 50px;
+}
+.target-points-container span{
+  color: var(--themeDarkBlue);
+  font-weight: 600;
+}
+.target-points-container p {
+  font-size: small;
+  color: var(--themeDarkBlue);
 }
