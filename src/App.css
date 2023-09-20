@@ -3,6 +3,7 @@
   --themeLightGray: #f5f5f5;
   --themeTextGray: #7e7e7e;
   --themeDarkGray: #f6f6f6;
+  --themeFooterBlue: #092b5a;
 }
 
 
@@ -160,15 +161,19 @@
 .slide-active {
   display: block;
 }
+
 .slide-inactive {
   display: none;
 }
-.prev, .next{
+
+.prev,
+.next {
   color: var(--themeDarkBlue);
   background-color: transparent;
   border: none;
 }
-.carousel-buttons{
+
+.carousel-buttons {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -183,7 +188,7 @@
 
 /* -----------------------------faq css start------------------------- */
 
-.faq-container{
+.faq-container {
   color: var(--themeDarkBlue);
   display: flex;
   flex-direction: column;
@@ -191,22 +196,23 @@
   align-items: center;
 }
 
-.faq-container h3{
+.faq-container h3 {
   font-size: 30px;
   font-weight: 600;
 }
 
-.faq-container ul{
+.faq-container ul {
   width: 100%;
 }
 
-.faq-container ul li{
+.faq-container ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
   border-bottom: 1px solid var(--themeDarkBlue);
 }
+
 /* -----------------------------faq css start------------------------- */
 .theme-btn {
   background-color: var(--themeDarkBlue);
@@ -275,11 +281,12 @@
   font-weight: 600;
 }
 
-.blog-container{
+.blog-container {
   overflow-x: scroll;
   margin: 30px 0;
 }
-.grid-container{
+
+.grid-container {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -287,7 +294,7 @@
   gap: 20px;
 }
 
-.blog-card:last-child{
+.blog-card:last-child {
   padding-right: 1rem;
 }
 
@@ -301,15 +308,17 @@
   width: 24rem;
   border-radius: 1rem;
 }
-.blog-card h3{
+
+.blog-card h3 {
   font-weight: 600;
 }
+
 .blog-card a {
-text-decoration: none;
-color: #ffffff;
-display: flex;
-align-items: center;
-gap: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .target-points-container {
@@ -324,22 +333,60 @@ gap: 8px;
   gap: 30px;
 }
 
-.target-points-container h5{
+.target-points-container h5 {
   font-weight: 700;
   padding: 0;
   margin: 0;
   color: var(--themeDarkBlue);
   font-size: 50px;
 }
-.target-points-container span{
+
+.target-points-container span {
   color: var(--themeDarkBlue);
   font-weight: 600;
 }
+
 .target-points-container p {
   font-size: small;
   color: var(--themeDarkBlue);
 }
 
+/* ------------------ navbar css start ------------------------ */
+
+.footer-container {
+  background-color: var(--themeFooterBlue);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.footer-container .footer-option {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.footer-container .footer-option h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.social-media-container svg{
+width: 35px;
+height: 35px;
+}
+
+.footer-copyright {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--themeDarkBlue);
+}
+
+/* ------------------ navbar css end ------------------------ */
 
 .container {
   width: 100%;
@@ -356,7 +403,7 @@ gap: 8px;
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  
+
 }
 
 /* Medium screens (max-width: 768px) */
@@ -382,10 +429,10 @@ gap: 8px;
     color: white;
   }
 
-  .navbar-menu-mobile{
+  .navbar-menu-mobile {
     display: none;
   }
-    
+
   .navbar-menu {
     display: flex;
     justify-content: center;
@@ -400,28 +447,28 @@ gap: 8px;
     justify-content: center;
     align-items: start;
   }
-  
+
   .calender-container .calender-items {
     width: 80%;
   }
-  
+
   .calender-container ul {
     display: flex;
     justify-content: space-around;
     align-items: start;
-  
+
   }
-  
+
   .calender-container ul li {
     justify-content: space-around;
   }
 
-  .target-points-container{
+  .target-points-container {
     flex-direction: row;
     justify-content: space-around;
   }
 
-  .carousel-buttons{
+  .carousel-buttons {
     padding: 0 20px;
   }
 }
