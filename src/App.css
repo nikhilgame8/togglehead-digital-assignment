@@ -180,6 +180,34 @@
 
 /* --------------------------carousel css ------------------------- */
 
+
+/* -----------------------------faq css start------------------------- */
+
+.faq-container{
+  color: var(--themeDarkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-container h3{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.faq-container ul{
+  width: 100%;
+}
+
+.faq-container ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--themeDarkBlue);
+}
+/* -----------------------------faq css start------------------------- */
 .theme-btn {
   background-color: var(--themeDarkBlue);
   color: white;

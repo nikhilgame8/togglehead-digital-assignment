@@ -5,6 +5,7 @@ import HomeCarousel from '../components/HomeCarousel'
 import Calender from '../components/Calender'
 import BlogGrid from '../components/BlogGrid'
 import TargetPoints from '../components/TargetPoints'
+import FAQ from '../components/FAQ'
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Calender />
             <BlogGrid />
             <TargetPoints />
+            <FAQ />
             <Footer />
         </div>
     )
