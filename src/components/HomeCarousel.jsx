@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeCarousel = () => {
   return (
-    <div className="homeCarousel">
+    <div className="homeCarousel container">
       <div className="carousel-content">
         <h1 className="text-theme-blue">Ea id quis nostrud qui</h1>
         <p className="text-light-gray">

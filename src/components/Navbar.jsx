@@ -1,9 +1,9 @@
 import React from "react";
-import { ArrowDownIcon, ChevronDownIcon, MagnifyingGlassIcon} from '@heroicons/react/24/solid'
+import { Bars2Icon, ChevronDownIcon, MagnifyingGlassIcon} from '@heroicons/react/24/solid'
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar container">
       <div className="logo">LOGO</div>
       <div className="navbar-menu-container">
         <ul className="navbar-menu">
@@ -18,6 +18,9 @@ const Navbar = () => {
           </li>
           <li className="white-btn">Enrolment</li>
         </ul>
+      </div>
+      <div className="navbar-menu-mobile">
+        <Bars2Icon className="lg-icon"/>
       </div>
     </nav>
   );

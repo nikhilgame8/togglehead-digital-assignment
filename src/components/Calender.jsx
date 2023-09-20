@@ -3,7 +3,7 @@ import React from "react";
 
 const Calender = () => {
   return (
-    <div className="calender-container">
+    <div className="calender-container container">
       <div>
         <h3 className="text-theme-blue">Upcoming Examinations</h3>
         <p className="text-light-gray">Veniam aliquip commodo consectetur et culpa.</p>

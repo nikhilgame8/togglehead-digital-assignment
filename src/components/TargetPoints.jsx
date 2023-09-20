@@ -2,7 +2,7 @@ import React from "react";
 
 const TargetPoints = () => {
   return (
-    <div className="target-points-container">
+    <div className="target-points-container container">
       <div>
         <div className="text-theme-blue">Lorem Ipsum</div>
         <h5>123 +</h5>

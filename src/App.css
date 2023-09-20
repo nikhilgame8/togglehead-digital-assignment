@@ -71,95 +71,15 @@
   }
 }
 
-
-.container {
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Small screens (max-width: 640px) */
-@media screen and (min-width: 640px) {
-  .container {
-    max-width: 640px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .videos-container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Medium screens (max-width: 768px) */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .videos-container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Large screens (max-width: 1024px) */
-@media screen and (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .videos-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-/* Extra-large screens (max-width: 1280px) */
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .videos-container {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-/* Extra-extra-large screens (max-width: 1536px) */
-@media screen and (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
-  .videos-container {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 2px 0;
+  padding: 15px 8px;
   background-color: var(--themeDarkBlue);
   color: white;
 }
@@ -170,12 +90,7 @@
 }
 
 .navbar-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  list-style: none;
-  gap: 20px;
+  display: none;
 }
 
 .navbar-menu li {
@@ -193,10 +108,10 @@
 }
 
 .homeCarousel .carousel-content {
-  max-width: 40%;
+  max-width: 80%;
   position: absolute;
-  top: 25%;
-  left: 50px;
+  top: 20px;
+  left: 30px;
 }
 
 .theme-btn {
@@ -240,9 +155,6 @@
 
 .calender-container {
   margin: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: start;
   border-right-width: 0px;
   border-left-width: 2px;
 }
@@ -252,20 +164,10 @@
   font-weight: 500;
 }
 
-.calender-container .calender-items {
-  width: 80%;
-}
-
-.calender-container ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: start;
-
-}
 
 .calender-container ul li {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: start;
   gap: 15px;
 }
@@ -285,6 +187,7 @@
 }
 .grid-container{
   display: flex;
+  justify-content: start;
   align-items: center;
   gap: 20px;
 }
@@ -307,11 +210,14 @@ display: flex;
 align-items: center;
 gap: 8px;
 }
-.target-points-container{
+
+.target-points-container {
   display: flex;
-  background-color: var(--themeLightGray);
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: var(--themeLightGray);
   padding: 50px;
   margin: 30px 0;
   gap: 30px;
@@ -331,4 +237,115 @@ gap: 8px;
 .target-points-container p {
   font-size: small;
   color: var(--themeDarkBlue);
+}
+
+
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small screens (max-width: 640px) */
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+}
+
+/* Medium screens (max-width: 768px) */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .homeCarousel .carousel-content {
+    max-width: 40%;
+    top: 25%;
+    left: 50px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px 0;
+    background-color: var(--themeDarkBlue);
+    color: white;
+  }
+
+  .navbar-menu-mobile{
+    display: none;
+  }
+    
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    list-style: none;
+    gap: 20px;
+  }
+
+  .calender-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .calender-container .calender-items {
+    width: 80%;
+  }
+  
+  .calender-container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  
+  }
+  
+  .calender-container ul li {
+    justify-content: space-around;
+  }
+
+  .target-points-container{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Large screens (max-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Extra-large screens (max-width: 1280px) */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+}
+
+/* Extra-extra-large screens (max-width: 1536px) */
+@media screen and (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
 }

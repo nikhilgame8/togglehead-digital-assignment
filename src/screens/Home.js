@@ -8,7 +8,7 @@ import TargetPoints from '../components/TargetPoints'
 
 const Home = () => {
     return (
-        <div className='container'>
+        <div>
             <Navbar />
             <HomeCarousel />
             <Calender />

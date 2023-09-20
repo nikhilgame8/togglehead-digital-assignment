@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogGrid = () => {
   return (
-    <div className="blog-container hide-scroll-bar">
+    <div className="blog-container hide-scroll-bar container">
       <div className="grid-container">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
           <div key={index} className="blog-card">
