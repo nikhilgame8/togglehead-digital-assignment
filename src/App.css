@@ -6,7 +6,6 @@
   --themeFooterBlue: #092b5a;
 }
 
-
 * {
   scroll-behavior: smooth;
 }
@@ -48,8 +47,6 @@
   width: 0.25rem;
   /* Set to a non-zero value to hide the scrollbar, adjust as needed */
 }
-
-
 
 /* Safari */
 @-webkit-keyframes spin {
@@ -120,7 +117,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-
 .carousel-content {
   max-width: 80%;
 }
@@ -184,7 +180,6 @@
 }
 
 /* --------------------------carousel css ------------------------- */
-
 
 /* -----------------------------faq css start------------------------- */
 
@@ -265,7 +260,6 @@
   font-weight: 500;
 }
 
-
 .calender-container ul li {
   display: flex;
   justify-content: start;
@@ -322,6 +316,21 @@
   gap: 8px;
 }
 
+.subscribe-container {
+  color: var(--themeDarkBlue);
+  height: 200px;
+  padding: 30px 0;
+  background-color: var(--themeLightGray);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.subscribe-container h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .target-points-container {
   display: flex;
   flex-direction: column;
@@ -366,7 +375,7 @@
   flex-direction: column;
   align-items: start;
 }
-.footer-container .footer-option h3{
+.footer-container .footer-option h3 {
   font-size: 25px;
   font-weight: 600;
 }
@@ -374,12 +383,12 @@
   display: flex;
   justify-content: start;
 }
-.social-media-container svg{
-width: 35px;
-height: 35px;
+.social-media-container svg {
+  width: 35px;
+  height: 35px;
 }
 
-.footer-item div{
+.footer-item div {
   display: flex;
   align-items: start;
   gap: 5px;
@@ -411,7 +420,6 @@ height: 35px;
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
 }
 
 /* Medium screens (max-width: 768px) */
@@ -464,7 +472,6 @@ height: 35px;
     display: flex;
     justify-content: space-around;
     align-items: start;
-
   }
 
   .calender-container ul li {
@@ -483,7 +490,7 @@ height: 35px;
     flex-direction: row;
     gap: 10px;
   }
-  .footer-container .footer-option .footer-item{
+  .footer-container .footer-option .footer-item {
     width: 33%;
   }
 }
@@ -504,7 +511,6 @@ height: 35px;
     padding-left: 5rem;
     padding-right: 5rem;
   }
-
 }
 
 /* Extra-extra-large screens (max-width: 1536px) */
@@ -514,5 +520,4 @@ height: 35px;
     padding-left: 6rem;
     padding-right: 6rem;
   }
-
 }
