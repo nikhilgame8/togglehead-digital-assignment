@@ -1,10 +1,10 @@
 import React from "react";
-import { PlusCircleIcon } from "@heroicons/react/24/solid";
+import { BuildingOffice2Icon, EnvelopeIcon, MapPinIcon, PhoneIcon, PlusCircleIcon } from "@heroicons/react/24/solid";
 
 const Footer = () => {
   return (
-    <div className="footer-container container">
-      <div className="footer-option">
+    <div className="footer-container">
+      <div className="footer-option container">
         <div className="footer-item">
           <h3>Contact us</h3>
           <p>Aliqua anim dolore eu adipisicing Lorem est nisi.</p>
@@ -75,19 +75,19 @@ const Footer = () => {
         <div className="footer-item">
           <h3>Head Office</h3>
           <div>
-            <PlusCircleIcon className="md-icon" /> Excepteur ex in enim
+            <EnvelopeIcon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
           <div>
-            <PlusCircleIcon className="md-icon" /> Excepteur ex in enim
+            <MapPinIcon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
           <div>
-            <PlusCircleIcon className="md-icon" /> Excepteur ex in enim
+            <BuildingOffice2Icon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
           <div>
-            <PlusCircleIcon className="md-icon" /> Excepteur ex in enim
+            <PhoneIcon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
         </div>
