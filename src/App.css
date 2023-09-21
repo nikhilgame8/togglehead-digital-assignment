@@ -317,13 +317,18 @@
 }
 
 .subscribe-container {
+  margin-top: 30px;
   color: var(--themeDarkBlue);
   height: 200px;
-  padding: 30px 0;
   background-color: var(--themeLightGray);
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+.subscribe-content{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .subscribe-container h3 {
@@ -363,17 +368,21 @@
 
 /* ------------------ navbar css start ------------------------ */
 
-.footer-container {
-  background-color: var(--themeFooterBlue);
+.footer-container {  
   height: 100%;
   color: #ffffff;
 }
 
 .footer-container .footer-option {
+  background-color: var(--themeFooterBlue);
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: start;
+  padding-bottom: 30px;
+}
+.office-detail{
+  padding: 6px 0;
 }
 .footer-container .footer-option h3 {
   font-size: 25px;
@@ -395,7 +404,6 @@
 }
 .footer-copyright {
   padding: 30px 0;
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -489,6 +497,7 @@
   .footer-container .footer-option {
     flex-direction: row;
     gap: 10px;
+    padding-bottom: 30px;
   }
   .footer-container .footer-option .footer-item {
     width: 33%;

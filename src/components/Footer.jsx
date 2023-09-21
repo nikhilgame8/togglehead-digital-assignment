@@ -74,25 +74,25 @@ const Footer = () => {
         </div>
         <div className="footer-item">
           <h3>Head Office</h3>
-          <div>
+          <div className="office-detail">
             <EnvelopeIcon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
-          <div>
+          <div className="office-detail">
             <MapPinIcon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
-          <div>
+          <div className="office-detail">
             <BuildingOffice2Icon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
-          <div>
+          <div className="office-detail">
             <PhoneIcon className="md-icon" /> Excepteur ex in enim
             incididunt veniam aliqua mollit in.
           </div>
         </div>
       </div>
-      <div className="footer-copyright">
+      <div className="footer-copyright container">
         2021 All Rights Reserved. Privacy Policy
       </div>
     </div>
