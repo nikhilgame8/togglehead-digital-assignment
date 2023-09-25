@@ -191,6 +191,26 @@
   align-items: center;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+@keyframes slide-down {
+  from {
+      max-height: 0%;
+      opacity: 0;
+  }
+  to {
+      max-height: 100%; /* Adjust the value as needed */
+      opacity: 1;
+  }
+}
+
+.active-answer {
+  animation: slide-down 0.5s ease; 
+}
+
 .faq-container h3 {
   font-size: 30px;
   font-weight: 600;
@@ -325,26 +345,29 @@
   flex-direction: column;
   align-items: start;
 }
-.subscribe-content{
+
+.subscribe-content {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.subscribe-content p{
+.subscribe-content p {
   max-width: 600px;
 }
 
-.subscribe-form{
+.subscribe-form {
   display: flex;
   gap: 8px;
 }
-.subscribe-form .subscribe-input{
+
+.subscribe-form .subscribe-input {
   padding: 0 20px;
   width: 100%;
   border: 1px solid lightgray;
   border-radius: 0.5rem;
 }
-.subscribe-form button{
+
+.subscribe-form button {
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -388,7 +411,7 @@
 
 /* ------------------ navbar css start ------------------------ */
 
-.footer-container {  
+.footer-container {
   height: 100%;
   color: #ffffff;
 }
@@ -401,27 +424,31 @@
   align-items: start;
   padding-bottom: 30px;
 }
-.office-detail{
+
+.office-detail {
   padding: 6px 0;
 }
+
 .footer-container .footer-option h3 {
   font-size: 25px;
   font-weight: 600;
 }
+
 .social-media-container {
   display: flex;
   justify-content: start;
 }
+
 .social-media-container svg {
   width: 35px;
   height: 35px;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.footer-item{
+.footer-item {
   width: 100%;
 }
 
@@ -431,6 +458,7 @@
   justify-content: space-around;
   gap: 5px;
 }
+
 .footer-copyright {
   padding: 30px 0;
   display: flex;
@@ -523,11 +551,13 @@
   .carousel-buttons {
     padding: 0 20px;
   }
+
   .footer-container .footer-option {
     flex-direction: row;
     gap: 10px;
     padding-bottom: 30px;
   }
+
   .footer-container .footer-option .footer-item {
     width: 33%;
   }
