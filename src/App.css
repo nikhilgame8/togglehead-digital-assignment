@@ -325,7 +325,7 @@
 }
 .grid-carousel-buttons {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 0 30px;
   width: 100%;
@@ -583,6 +583,9 @@
 
   .footer-container .footer-option .footer-item {
     width: 33%;
+  }
+  .grid-carousel-buttons{
+    display: flex;
   }
 }
 

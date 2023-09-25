@@ -31,7 +31,7 @@ const FAQ = () => {
       <h3>FAQ</h3>
       <div className="list-container">
         {questionAnswer.map((item, index) => [
-          <div>
+          <div key={index}>
             <div className="list-item">
               <p>{item.question}</p>
               {activeQuestion == item.id ? (
